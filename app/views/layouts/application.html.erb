@@ -5,13 +5,46 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <link href='https://fonts.googleapis.com/css?family=Lobster|Pacifico' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 
-<%= yield %>
+  <main>
+    <%= yield %>  
+  </main>
 
 </body>
+
+  <footer class="page-footer indigo">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Contact Me</h5>
+        <a href="https://www.facebook.com/the.man.from.japan"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/karsonhatch"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="https://github.com/karsonhatch"><i class="fa fa-github" aria-hidden="true"></i></a>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links to Some Projects of Mine</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="http://doubledater.herokuapp.com/">Double Dater</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2016 Copyright Karson Hatch
+    <a class="grey-text text-lighten-4 right" href="http://www.devpointlabs.com">Visit My Alma Mater, Devpoint Labs</a>
+    </div>
+  </div>
+</footer>
+<div id="cookie_warn" class="black hidden">
+  <p class="white-text center">This website uses cookies, if you don't like it... tough? IDK bruh, but good luck.</p>
+</div>
+    
+
 </html>

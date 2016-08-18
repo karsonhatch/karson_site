@@ -25,11 +25,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'materialize-sass'
 gem 'puma' 
 gem "font-awesome-rails"
+gem 'devise'
+gem 'will_paginate', '~> 3.1.0'
 
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  gem 'pry'
+  gem 'better_errors'
 end
 
 group :development do
