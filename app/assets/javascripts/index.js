@@ -4,8 +4,8 @@ $(document).ready(function(){
 	$('#fade3').delay(6000).fadeIn(3000)
 	$('#fade4').delay(8000).fadeIn(3000)
 	$('#fade5').delay(8000).fadeIn(3000)
-	$('#cookie').click(function (){
-		// cookies[:have_you_seen_me] = true;
-		alert("this is supposed to slap a cookie in your vag, but it isn't doing it for one reason or another.")
-	});
+	// $('#cookie').click(function (){
+	// 	// cookies[:have_you_seen_me] = true;
+	// 	alert("this is supposed to slap a cookie in your browser, but it isn't doing it for one reason or another.")
+	// });
 });
