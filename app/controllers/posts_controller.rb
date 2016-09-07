@@ -1,10 +1,12 @@
 class PostsController < ApplicationController
+	
    def index
     @posts = Post.all
   end
 
   def show
     @post = Post.find(params[:id])
+    # @post_snippet = arr.new << Post.find(params[:id]).body
   end
 
   def new
@@ -14,8 +16,9 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.save
-      redirect_to root_path
+      redirect_to posts_path
     else
+    	flash[:notice] = "Post did not create succesfully, please try again"
       render :new
     end
   end
@@ -41,6 +44,6 @@ class PostsController < ApplicationController
 
   private
     def post_params
-      params.require(:post).permit(:title, :genre, :actors)
+      params.require(:post).permit(:title, :date, :body)
     end
 end

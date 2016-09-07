@@ -1,2 +1,18 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<DIV class="container">
+	<div class="row">
+		<div class="col s10">		
+			<h3>
+				<%=@post.title%>
+			</h3>
+		</div>
+	</div>
+	<div class="col s2">
+			<p class="grey-text small">by Karson Hatch</p>
+		</div>
+	<div class="divider"></div>
+	<br />
+	<div class="container">
+		<%= @post.body %>
+
+	</div>
+</DIV>
