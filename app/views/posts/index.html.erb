@@ -3,11 +3,13 @@
 	<div class="col s6">
 		<h1>All Posts</h1>
 	</div>
+	<% if current_user %>
 	<div class="col s6">
 		<div class="right">
 			<%= link_to '+ New Post', new_post_path, class:"btn green accent-4" %>
 		</div>
 	</div>
+	<% end %>
 </div>
 	<div class="divider"></div>
 	<div class="container">
@@ -22,6 +24,9 @@
 	            </div>
 	            <div class="card-action">
 	            <%= link_to 'View Post', post_path(p) %>
+	            <%if current_user%>
+	            	<%= link_to 'Edit', edit_post_path(p) %>
+	            <% end %>
 	            </div>
 	          </div>
 	        </div>
