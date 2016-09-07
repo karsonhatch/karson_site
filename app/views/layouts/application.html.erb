@@ -8,6 +8,15 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
+<nav>
+    <div class="nav-wrapper indigo darken-1">
+    <%= link_to 'Karson Hatch', posts_path, class:'brand-logo center' %>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><%=link_to 'Blog', posts_path %></li>
+        <li><a href="collapsible.html">Photography</a></li>
+      </ul>
+    </div>
+  </nav>
 <body>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>

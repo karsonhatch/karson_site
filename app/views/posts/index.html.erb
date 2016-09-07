@@ -21,6 +21,7 @@
 	          <div class="card medium indigo">
 	            <div class="card-content white-text">
 	              <span class="card-title"><%=p.title%></span>
+	              <p class="grey-text small"><%= p.created_at %> </p>
 	            </div>
 	            <div class="card-action">
 	            <%= link_to 'View Post', post_path(p) %>
@@ -36,7 +37,5 @@
 			<h3>There are no posts to display.</h3>
 			<%= link_to '+ New Post', new_post_path, class:"btn green accent-4" %>
 		<% end %>
-		<!-- </div>
-	</div>	
-	 -->
+
 </div>
